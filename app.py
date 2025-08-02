@@ -48,7 +48,7 @@ def get_prediction():
     baby_data_df = pd.DataFrame(baby_form_data_clean)
 
     #loading the machine learning model
-    with open('model/model.pkl', mode='rb') as obj:
+    with open('model.pkl', mode='rb') as obj:
         model = pickle.load(obj)
 
     # making prediction 
